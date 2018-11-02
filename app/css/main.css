@@ -237,13 +237,18 @@ body {
     color: #a2a2a2; }
     body .domain-information h3 {
       font-family: "Lato-Heavy", sans-serif;
-      color: black; }
+      color: black;
+      margin-top: 85px;
+      font-size: 1.5rem;
+      letter-spacing: 0.2; }
     body .domain-information p {
-      font-family: "Montserrat-ExstraLight", sans-serif; }
+      margin: 0 0 50px 0;
+      font-family: "Montserrat-ExstraLight", sans-serif;
+      letter-spacing: 0.83; }
     body .domain-information .input-decoration {
       border: 1px solid #a2a2a2;
-      padding: 5px;
-      width: 60%;
+      padding: 7px;
+      width: 55.5%;
       display: flex;
       align-items: center;
       box-sizing: border-box; }
@@ -251,15 +256,16 @@ body {
         body .domain-information .input-decoration {
           width: 90%; } }
       body .domain-information .input-decoration span {
-        padding-right: 10px; }
+        padding: 0 17px 0 9px; }
       body .domain-information .input-decoration input {
         color: black;
         border: none;
         border-left: 1px solid #a2a2a2;
         border-right: 1px solid #a2a2a2;
-        padding: 5px;
+        padding: 5px 15px;
+        letter-spacing: 0.25;
         outline: none;
-        width: 85%; }
+        width: 84%; }
       body .domain-information .input-decoration input::-moz-placeholder {
         color: #797878;
         font-weight: 500; }
@@ -274,8 +280,8 @@ body {
         body .domain-information .input-decoration .custom-select:after {
           position: absolute;
           pointer-events: none;
-          top: 10px;
-          right: 10px;
+          top: 11px;
+          right: 5px;
           content: "<";
           transform: rotate(-90deg) scale(1, 2);
           visibility: visible;
@@ -287,7 +293,8 @@ body {
           outline: none;
           background: transparent;
           height: 34px;
-          width: 90px;
+          width: 70px;
+          padding-left: 13px;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
@@ -295,9 +302,9 @@ body {
           color: #a2a2a2; }
     body .domain-information .table-decoration {
       border: 1px solid #a2a2a2;
-      padding: 10px;
-      margin-top: 20px;
-      width: 60%;
+      padding: 18px 25px;
+      margin-top: 37px;
+      width: 55.5%;
       display: flex;
       justify-content: center;
       box-sizing: border-box; }
@@ -323,8 +330,8 @@ body {
           text-align: center; }
           body .domain-information .table-decoration table tr td {
             border-right: 1px solid #a2a2a2;
-            padding: 20px;
-            width: 20%;
+            padding: 30px;
+            width: 25%;
             position: relative; }
             @media (max-width: 500px) {
               body .domain-information .table-decoration table tr td {
