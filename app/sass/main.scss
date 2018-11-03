@@ -60,6 +60,7 @@ $icon-color: #bfbfbf;
 	&:hover {
 		color: blue;
 	}
+	
 }
 
 %rotate {
@@ -123,8 +124,8 @@ body {
                     height: 15px;
                     margin: 10px 20px;
                     position: relative;
-                    border-top: 2px solid red;
-                    border-bottom: 2px solid red;
+                    border-top: 2px solid white;
+                    border-bottom: 2px solid white;
                     display: none;
                     cursor: pointer;
                     @media (max-width: 700px) {
@@ -139,7 +140,7 @@ body {
                     left: 0;
                     top: 6px;
                     height: 2px;
-                    background: red;
+                    background: white;
                 }
                 .list_routes {
                     @extend %position-shared;
@@ -216,7 +217,11 @@ body {
             background: #21424a;
             position: relative;
             padding-left: 236px;
-            letter-spacing: 4;
+			letter-spacing: 4;
+			@media (max-width: 900px) {
+				padding-left: 0;
+				font-size: 1.2rem;
+			}
         }
         .butt1::after {
             content: "";
@@ -239,7 +244,11 @@ body {
             background: #2fac6c;
             padding-right: 126px;
             font-size: 1.3rem;
-            letter-spacing: 1;
+			letter-spacing: 1;
+			@media (max-width: 900px) {
+				font-size: 1.2rem;
+				padding-right: 0;
+			}
 		}
 		
     }
@@ -385,7 +394,8 @@ body {
             width: 79%;
             margin-top: 32px;
             @media (max-width: 900px) {
-                flex-wrap: wrap;
+				flex-wrap: wrap;
+				width: 98%;
             }
         }
         .price {
@@ -395,7 +405,11 @@ body {
             width: 20%;
             align-items: center;
             padding: 39px 0 29px;
-            box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+			box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+			@media (max-width: 900px) {
+				margin-bottom: 10px;
+				width: auto;
+            }
             span {
                 padding: 17px 10px 21px;
                 font-family: "Lato-Bold", sans-serif;
@@ -540,14 +554,14 @@ body {
         .about {
             width: 75%;
             @extend %position-shared-content;
-            @media (max-width: 900px) {
-                width: 90%;
+            @media (max-width: 1000px) {
+                width: 98%;
                 flex-wrap: wrap;
             }
             .about-information {
                 width: 43%;
-                @media (max-width: 900px) {
-                    max-width: 100%;
+                @media (max-width: 1000px) {
+                    width: 98%;
                 }
                 & p:first-child {
                     font-size: 2.1rem;
@@ -562,19 +576,26 @@ body {
                     letter-spacing: -1;
                     line-height: 1.4;
                     text-align: justify;
-                    padding-right: 100px;
+					padding-right: 100px;
+					@media (max-width: 1000px) {
+						padding-right: 10px;
+					}
                 }
             }
             .line-decor {
                 height: 180px;
                 border-left: 1px dashed #d6d6d6;
-                margin-top: 41px;
+				margin-top: 41px;
+				@media (max-width: 900px) {
+					display: none;
+					height: 0;
+				}
             }
             .people-information {
                 display: flex;
                 width: 56.5%;
                 justify-content: space-around;
-                @media (max-width: 900px) {
+                @media (max-width: 1000px) {
                     width: 100%;
                     justify-content: center;
                     flex-wrap: wrap;
@@ -583,7 +604,10 @@ body {
                     @extend %position-shared-content;
                     flex-direction: column;
                     align-items: center;
-                    margin: 15px 0 0 80px;
+					margin: 15px 0 0 80px;
+					@media (max-width: 1100px) {
+						margin: 5px 0 0 15px;
+					}
                     & img {
                         border-radius: 50%;
                         box-shadow: 0 0 0 4px #c2caca;
@@ -639,7 +663,10 @@ body {
                     position: absolute;
                     top: 5%;
                     @extend %position-shared-content;
-                    align-items: center;
+					align-items: center;
+					@media (max-width: 1000px) {
+						font-size: 0.5rem;
+					}
                     blockquote {
                         @extend %position-shared-content;
                         flex-direction: column;
@@ -647,7 +674,8 @@ body {
                         text-align: center;
                         font-family: "Lato-Light", sans-serif;
                         color: #f5f5f5;
-                        line-height: 1.5;
+						line-height: 1.5;
+						
                         cite {
                             font-family: "Lato-Reglar", sans-serif;
                             font-style: normal;
@@ -658,14 +686,24 @@ body {
                     }
                 }
                 .slide1 {
-                    right: 20%;
+					right: 20%;
+					@media (max-width: 1000px) {
+						right: 30%;
+					}
                 }
                 .slide2 {
-                    right: 30%;
+					right: 30%;
+					@media (max-width: 1000px) {
+						right: 30%;
+					}
                 }
                 .slide3 {
-                    right: 38%;
-                }
+					right: 38%;
+					@media (max-width: 1000px) {
+						right: 30%;
+					}
+				}
+				
             }
             .slides-navigation {
                 text-align: center;
@@ -685,7 +723,14 @@ body {
                     transition: background-color 0.6s ease;
                     border: 1px solid white;
                     top: 59%;
-                    left: 54%;
+					left: 54%;
+
+					@media (max-width: 1000px) {
+						top: 74%;
+					left: 45%;
+					}
+
+
                 }
             }
             .active,
@@ -734,7 +779,12 @@ body {
                 width: 20%;
                 font-family: "Lato-Heavy", sans-serif;
                 padding: 17px 0px;
-                letter-spacing: 0.5;
+				letter-spacing: 0.5;
+				@media (max-width: 700px) {
+                    width: 95%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
                 a {
                     margin: 15px 0 5px;
                     text-decoration: none;
@@ -787,15 +837,27 @@ body {
         align-items: center;
         margin-top: 47px;
         .footer-wrapper {
-            width: 75%;
+			width: 75%;
+			@media (max-width: 1150px) {
+				width: 90%;
+				padding: 10px 0 0 0;
+			}
+			
             .footer-navigation {
                 border-bottom: 1px solid $main-color;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                font-family: "Lato-Medium", sans-serif;
+				font-family: "Lato-Medium", sans-serif;
+				@media (max-width: 1000px) {
+				   flex-direction: column;
+				   align-items: center;
+                }
                 .nav-footer {
-                    width: 36%;
+					width: 36%;
+					@media (max-width: 1000px) {
+						width:95%;
+					 }
                     .list_routes-footer {
                         display: flex;
                         justify-content: space-between;
@@ -803,9 +865,16 @@ body {
                         cursor: pointer;
                         list-style-type: none;
                         padding: 0;
-                        margin: 31px 0 8px;
+						margin: 31px 0 8px;
+						
                         li {
-                            font-size: 0.8rem;
+							font-size: 0.8rem;
+							@media (max-width: 1000px) {
+								padding: 10px;
+							 }
+							 @media (max-width: 600px) {
+								font-size: 0.7rem;
+							 }
                             a {
                                 color: $text-footer-color;
                                 text-decoration: none;
@@ -820,10 +889,19 @@ body {
             .more-opportunities {
                 display: flex;
                 align-items: center;
-                font-family: "Lato-Light", sans-serif;
+				font-family: "Lato-Light", sans-serif;
+				@media (max-width: 1000px) {
+					font-size: 0.8rem;
+				 }
+				 @media (max-width: 750px) {
+					flex-direction: column;
+				 }
                 .developer {
                     padding-right: 10px;
-                    max-width: 30%;
+					max-width: 30%;
+					@media (max-width: 750px) {
+						max-width:: 95%;
+					 }
                     & p {
                         line-height: 1.5;
                         padding-right: 39px;
@@ -835,12 +913,20 @@ body {
                     border-right: 1px solid $text-footer-color;
                     border-left: 1px solid $text-footer-color;
                     justify-content: center;
-                    width: 46%;
+					width: 46%;
+					@media (max-width: 1000px) {
+						justify-content: space-around;
+					 }
+					 @media (max-width: 750px) {
+						width: 95%;
+					 }
+
                     ul {
                         padding: 0;
                         margin: 0;
                         line-height: 1.9;
-                        width: 30%;
+						width: 30%;
+						
                         li {
                             list-style-type: none;
                             a {
@@ -862,6 +948,13 @@ body {
                 .contacts {
 					font-size: 0.9rem;
 					padding: 25px 0 0 42px;
+					@media (max-width: 1000px) {
+						padding: 10px 0 0 15px;
+					 }
+					 @media (max-width: 750px) {
+						width: 95%;
+						font-size: 0.8rem;
+					 }
                     div {
                         display: flex;
                         align-items: center;
@@ -896,7 +989,10 @@ body {
                 }
             }
             .more-opportunities>div {
-                margin: 55px 0;
+				margin: 55px 0;
+				@media (max-width: 750px) {
+					margin: 10px 0;
+				 }
             }
         }
         .modalDialog {
