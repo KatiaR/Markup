@@ -53,7 +53,7 @@ body .description-product .price .rotate_90::after, body .description-product .p
 body .description-product .price1 p, body .description-product .price2 p, body .description-product .price3 p, body .description-product .price4 p {
   font-family: "Lato-Heavy", sans-serif;
   font-size: 1.7rem;
-  padding: 0 25px 3px 39px;
+  padding: 0 14px 4px 22px;
   position: relative;
   font-size: 1.7rem;
   margin: 27px 0 19px; }
@@ -68,7 +68,7 @@ body .description-product .price1 p::before, body .description-product .price2 p
   color: black;
   position: absolute;
   font-size: 1.1rem;
-  left: 27px;
+  left: 11px;
   top: 4px; }
 
 body .button-place .butt1, body .button-place .butt2 {
@@ -78,6 +78,8 @@ body .button-place .butt1, body .button-place .butt2 {
   color: #ffffff;
   font-family: "Lato-Medium", sans-serif;
   cursor: pointer; }
+  body .button-place .butt1:hover, body .button-place .butt2:hover {
+    color: blue; }
 
 body .description-product .price .rotate_90::after, body .description-product .price .rotate_180::after, body .description-product .price .rotate_270::after, body .description-product .price .rotate_360::after {
   content: "";
@@ -329,7 +331,7 @@ body {
           text-align: center; }
           body .domain-information .table-decoration table tr td {
             border-right: 1px solid #a2a2a2;
-            width: 32px;
+            width: 24%;
             position: relative; }
             @media (max-width: 500px) {
               body .domain-information .table-decoration table tr td {
@@ -347,16 +349,15 @@ body {
       display: flex;
       justify-content: space-around;
       width: 79%;
-      margin-top: 100px; }
+      margin-top: 32px; }
       @media (max-width: 900px) {
         body .description-product .price-offers {
           flex-wrap: wrap; } }
     body .description-product .price {
       background: #ffffff;
-      height: 59%;
       width: 20%;
       align-items: center;
-      padding: 39px 0 0;
+      padding: 39px 0 29px;
       box-shadow: 0 0 5px 5px #dddddd; }
       body .description-product .price span {
         padding: 17px 10px 21px;
@@ -431,12 +432,15 @@ body {
       background: none;
       color: black;
       font-family: "Lato-Bold", sans-serif; }
+    body .description-product .button-select:hover {
+      color: blue;
+      box-shadow: 0 0 8px 2px #888; }
     body .description-product .line-separated {
       border-bottom: 1px dashed #d7d7d7;
       padding: 43px;
       width: 70%; }
   body .about-wrapper {
-    margin-top: 50px;
+    margin-top: -20px;
     letter-spacing: 1; }
     body .about-wrapper .about {
       width: 75%; }
@@ -451,7 +455,7 @@ body {
             max-width: 100%; } }
         body .about-wrapper .about .about-information p:first-child {
           font-size: 2.1rem;
-          font-family: "Lato-Black", sans-serif;
+          font-family: "Lato-Medium", sans-serif;
           margin: 35px 0 23px; }
         body .about-wrapper .about .about-information p + p {
           color: #747474;
@@ -509,33 +513,42 @@ body {
   body .slider .slides-wrapper {
     max-width: 1600px;
     position: relative;
-    margin-top: 100px; }
+    margin-top: 85px;
+    margin-bottom: 49px; }
     body .slider .slides-wrapper .mySlides img {
       width: 100%; }
     body .slider .slides-wrapper .mySlides .slideText {
       color: white;
-      font-size: 12px;
+      font-size: 1.22rem;
       position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
+      top: 5%;
       align-items: center; }
       body .slider .slides-wrapper .mySlides .slideText blockquote {
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-family: "Lato-Light", sans-serif;
-        color: #f5f5f5; }
+        color: #f5f5f5;
+        line-height: 1.5; }
         body .slider .slides-wrapper .mySlides .slideText blockquote cite {
           font-family: "Lato-Reglar", sans-serif;
-          font-style: normal; }
+          font-style: normal;
+          top: 82%;
+          position: absolute;
+          left: 42%; }
+    body .slider .slides-wrapper .mySlides .slide1 {
+      right: 20%; }
+    body .slider .slides-wrapper .mySlides .slide2 {
+      right: 30%; }
+    body .slider .slides-wrapper .mySlides .slide3 {
+      right: 38%; }
     body .slider .slides-wrapper .slides-navigation {
       text-align: center;
       border-left: 1px solid white;
-      top: 59%;
+      top: 65%;
       position: absolute;
-      left: 53%;
-      padding-left: 5px; }
+      left: 51%;
+      padding-left: 13px; }
       body .slider .slides-wrapper .slides-navigation .dot {
         cursor: pointer;
         height: 7px;
@@ -569,9 +582,9 @@ body {
   to {
     opacity: 1; } }
   body .page-services {
-    padding: 50px 0; }
+    padding: 32px 0; }
     body .page-services .servises-wrapper {
-      width: 80%;
+      width: 81%;
       justify-content: space-around; }
       @media (max-width: 500px) {
         body .page-services .servises-wrapper {
@@ -581,22 +594,26 @@ body {
         align-items: center;
         text-align: center;
         width: 20%;
-        font-family: "Lato-Heavy", sans-serif; }
+        font-family: "Lato-Heavy", sans-serif;
+        padding: 17px 0px;
+        letter-spacing: 0.5; }
         body .page-services .servises-wrapper .services a {
           margin: 15px 0 5px;
           text-decoration: none;
           color: black;
-          font-weight: bolder; }
+          font-weight: bolder;
+          font-size: 1.1rem; }
         body .page-services .servises-wrapper .services a:hover {
           color: blue; }
         body .page-services .servises-wrapper .services .icon-services {
-          width: 30px;
-          height: 30px;
+          width: 55px;
+          height: 55px;
           border-radius: 50%;
           padding: 5px;
           align-items: center; }
           body .page-services .servises-wrapper .services .icon-services i {
-            color: white; }
+            color: white;
+            font-size: 1.5rem; }
         body .page-services .servises-wrapper .services .icon-light {
           background-color: #f1c40f; }
         body .page-services .servises-wrapper .services .icon-cloud {
@@ -607,36 +624,42 @@ body {
           background-color: #f1540f; }
         body .page-services .servises-wrapper .services p {
           color: #747474;
-          font-family: "Lato-Light", sans-serif; }
+          font-family: "Lato-Light", sans-serif;
+          font-size: 1rem;
+          line-height: 1.4;
+          margin: 0; }
   body .footer {
     background-color: #2a2a2a;
     color: #949494;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 47px; }
     body .footer .footer-wrapper {
-      width: 80%; }
+      width: 75%; }
       body .footer .footer-wrapper .footer-navigation {
         border-bottom: 1px solid #bfbfbf;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         font-family: "Lato-Medium", sans-serif; }
         body .footer .footer-wrapper .footer-navigation .nav-footer {
-          width: 70%; }
+          width: 36%; }
           body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             cursor: pointer;
             list-style-type: none;
-            padding: 0; }
-            body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer li a {
-              color: #949494;
-              text-decoration: none;
-              padding: 17px; }
-            body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer li a:hover {
-              color: white; }
+            padding: 0;
+            margin: 31px 0 8px; }
+            body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer li {
+              font-size: 0.8rem; }
+              body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer li a {
+                color: #949494;
+                text-decoration: none; }
+              body .footer .footer-wrapper .footer-navigation .nav-footer .list_routes-footer li a:hover {
+                color: white; }
       body .footer .footer-wrapper .more-opportunities {
         display: flex;
         align-items: center;
@@ -644,13 +667,21 @@ body {
         body .footer .footer-wrapper .more-opportunities .developer {
           padding-right: 10px;
           max-width: 30%; }
+          body .footer .footer-wrapper .more-opportunities .developer p {
+            line-height: 1.5;
+            padding-right: 39px;
+            letter-spacing: -0.5; }
         body .footer .footer-wrapper .more-opportunities .site-map {
           display: flex;
           border-right: 1px solid #949494;
           border-left: 1px solid #949494;
-          padding: 0 10px; }
+          justify-content: center;
+          width: 46%; }
           body .footer .footer-wrapper .more-opportunities .site-map ul {
-            padding: 0 10px; }
+            padding: 0;
+            margin: 0;
+            line-height: 1.9;
+            width: 30%; }
             body .footer .footer-wrapper .more-opportunities .site-map ul li {
               list-style-type: none; }
               body .footer .footer-wrapper .more-opportunities .site-map ul li a {
@@ -659,20 +690,34 @@ body {
               body .footer .footer-wrapper .more-opportunities .site-map ul li a:hover {
                 color: white; }
               body .footer .footer-wrapper .more-opportunities .site-map ul li a:before {
-                content: "\203A";
-                padding: 0 5px;
+                content: ">";
+                padding: 0 10px 0 0;
                 font-size: 15px;
                 cursor: pointer; }
         body .footer .footer-wrapper .more-opportunities .contacts {
-          padding-left: 20px;
-          font-size: 1rem; }
+          font-size: 0.9rem;
+          padding: 25px 0 0 42px; }
           body .footer .footer-wrapper .more-opportunities .contacts div {
             display: flex;
             align-items: center; }
+            body .footer .footer-wrapper .more-opportunities .contacts div .fa-phone {
+              transform: rotate(90deg);
+              color: #949494; }
+            body .footer .footer-wrapper .more-opportunities .contacts div .interactive {
+              color: #949494 !important;
+              text-decoration: none; }
             body .footer .footer-wrapper .more-opportunities .contacts div i {
-              padding-right: 5px; }
+              margin-right: 9px;
+              font-size: 0.8rem; }
+            body .footer .footer-wrapper .more-opportunities .contacts div p {
+              margin: 0;
+              line-height: 1.8; }
+            body .footer .footer-wrapper .more-opportunities .contacts div a {
+              margin-right: 9px; }
+          body .footer .footer-wrapper .more-opportunities .contacts .email {
+            margin-top: 5px; }
       body .footer .footer-wrapper .more-opportunities > div {
-        margin: 30px 0; }
+        margin: 55px 0; }
     body .footer .modalDialog {
       position: fixed;
       font-family: Arial, Helvetica, sans-serif;
