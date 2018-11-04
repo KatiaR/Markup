@@ -4,7 +4,7 @@ gamburger.addEventListener('click',()=>{
 	document.getElementsByClassName("list_routes")[0].classList.toggle("open");
 })
 
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex)
 
 function plusSlides(n) {
@@ -16,22 +16,25 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	let  i;
 	const slides = document.getElementsByClassName("mySlides");
 	const dots = document.getElementsByClassName("dot");
 
 	if (n > slides.length) {
-		slideIndex = 1;
+		slideIndex = 0;
 	}
-	if (n < 1) {
+	if (n < 0) {
 		slideIndex = slides.length;
 	}
-	for (i = 0; i < slides.length; i++) {
+	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace("active", "");
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].classList.remove("active");
 	}
-	slides[slideIndex - 1].style.display = "flex";
-	dots[slideIndex - 1].slassName += "active"
+    slides[slideIndex].style.display = "flex";
+    [...dots].forEach((elem,index) => {
+        if (slideIndex === index % slides.length) {
+            elem.classList.add("active");
+        }
+    })
 }

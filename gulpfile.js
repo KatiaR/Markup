@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
 var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
 
@@ -15,6 +16,10 @@ gulp.task('scss', function () {
 			}
 		}))
 		.pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
 		.on('error', function (err) {
 			console.log(err.toString());
 
