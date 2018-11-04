@@ -30,7 +30,7 @@ $icon-color: #bfbfbf;
     p {
         font-family: "Lato-Heavy", sans-serif;
         font-size: 1.7rem;
-        padding: 0 14px 4px 22px;
+        padding: 0 14px 2px 22px;
         position: relative;
         font-size: 1.7rem;
         margin: 27px 0 19px;
@@ -265,10 +265,11 @@ body {
             letter-spacing: 0.2;
         }
         p {
-            margin: 0 0 50px 0;
+            margin: 0 0 49px 0;
             font-family: "Montserrat-ExstraLight", sans-serif;
             letter-spacing: 0.83;
-        }
+		}
+		
         .input-decoration {
             border: 1px solid $table-color;
             padding: 7px;
@@ -334,7 +335,7 @@ body {
         }
         .table-decoration {
             border: 1px solid $table-color;
-            padding: 21px 24px;
+            padding: 25px 23px;
             margin-top: 37px;
             width: 55.5%;
             display: flex;
@@ -379,11 +380,12 @@ body {
                     }
                 }
             }
-        }
+		}
+		
     }
     .description-product {
         background: url(../images/img-eff.png) no-repeat;
-        margin-top: 86px;
+        margin-top: 89px;
         @extend %position-shared-content;
         flex-direction: column;
         align-items: center;
@@ -392,10 +394,10 @@ body {
             display: flex;
             justify-content: space-around;
             width: 79%;
-            margin-top: 32px;
+            margin-top: 30px;
             @media (max-width: 900px) {
 				flex-wrap: wrap;
-				width: 98%;
+				width: 100%;
             }
         }
         .price {
@@ -651,9 +653,11 @@ body {
         .slides-wrapper {
             max-width: 1600px;
             position: relative;
-            margin-top: 85px;
+            margin-top: 88px;
             margin-bottom: 49px;
             .mySlides {
+				display: flex;
+				justify-content: center;
                 & img {
                     width: 100%;
                 }
@@ -662,11 +666,14 @@ body {
                     font-size: 1.22rem;
                     position: absolute;
                     top: 5%;
-                    @extend %position-shared-content;
-					align-items: center;
-					@media (max-width: 1000px) {
-						font-size: 0.5rem;
-					}
+                   margin: 0;
+				   @media (max-width: 1000px) {
+					font-size: 1rem;
+				}
+				@media (max-width: 500px) {
+					top: 2%;
+				}
+				
                     blockquote {
                         @extend %position-shared-content;
                         flex-direction: column;
@@ -679,39 +686,34 @@ body {
                         cite {
                             font-family: "Lato-Reglar", sans-serif;
                             font-style: normal;
-                            top: 82%;
-                            position: absolute;
-                            left: 42%;
-                        }
+							bottom: 0;
+							left: 42%;
+							position: absolute;
+							
+						}
+						.cite-name {
+							left: 32%;
+							@media (max-width: 1000px) {
+								left: 45%;
+							}
+						}
                     }
                 }
-                .slide1 {
-					right: 20%;
-					@media (max-width: 1000px) {
-						right: 30%;
-					}
-                }
-                .slide2 {
-					right: 30%;
-					@media (max-width: 1000px) {
-						right: 30%;
-					}
-                }
-                .slide3 {
-					right: 38%;
-					@media (max-width: 1000px) {
-						right: 30%;
-					}
-				}
+               
 				
             }
             .slides-navigation {
                 text-align: center;
                 border-left: 1px solid white;
-                top: 65%;
-                position: absolute;
-                left: 51%;
-                padding-left: 13px;
+                
+				bottom: 25%;
+				
+    position: absolute;
+    left: 51.1%;
+	padding-left: 13px;
+	@media (max-width: 1000px) {
+		bottom: 5%;
+	}
                 .dot {
                     cursor: pointer;
                     height: 7px;
@@ -724,13 +726,7 @@ body {
                     border: 1px solid white;
                     top: 59%;
 					left: 54%;
-
-					@media (max-width: 1000px) {
-						top: 74%;
-					left: 45%;
-					}
-
-
+			
                 }
             }
             .active,
@@ -768,8 +764,9 @@ body {
             @extend %position-shared-content;
             width: 81%;
             justify-content: space-around;
-            @media (max-width: 500px) {
-                width: 100%;
+            @media (max-width: 900px) {
+				width: 100%;
+				flex-wrap: wrap;
             }
             .services {
                 @extend %position-shared-column;
@@ -783,7 +780,7 @@ body {
 				@media (max-width: 700px) {
                     width: 95%;
                     justify-content: center;
-                    flex-wrap: wrap;
+                    
                 }
                 a {
                     margin: 15px 0 5px;
@@ -849,6 +846,7 @@ body {
                 justify-content: space-between;
                 align-items: flex-end;
 				font-family: "Lato-Medium", sans-serif;
+				padding-bottom: 22px;
 				@media (max-width: 1000px) {
 				   flex-direction: column;
 				   align-items: center;
@@ -900,7 +898,7 @@ body {
                     padding-right: 10px;
 					max-width: 30%;
 					@media (max-width: 750px) {
-						max-width:: 95%;
+						max-width: 95%;
 					 }
                     & p {
                         line-height: 1.5;
@@ -989,7 +987,7 @@ body {
                 }
             }
             .more-opportunities>div {
-				margin: 55px 0;
+				margin: 36px 0;
 				@media (max-width: 750px) {
 					margin: 10px 0;
 				 }

@@ -46,14 +46,14 @@ body .description-product .price, body .page-services .servises-wrapper .service
   display: flex;
   flex-direction: column; }
 
-body .description-product .price .rotate_90::after, body .description-product .price .rotate_180::after, body .description-product .price .rotate_270::after, body .description-product .price .rotate_360::after, body .description-product, body .about-wrapper, body .about-wrapper .about, body .about-wrapper .about .people-information figure, body .slider .slides-wrapper .mySlides .slideText, body .slider .slides-wrapper .mySlides .slideText blockquote, body .page-services, body .page-services .servises-wrapper, body .page-services .servises-wrapper .services .icon-services {
+body .description-product .price .rotate_90::after, body .description-product .price .rotate_180::after, body .description-product .price .rotate_270::after, body .description-product .price .rotate_360::after, body .description-product, body .about-wrapper, body .about-wrapper .about, body .about-wrapper .about .people-information figure, body .slider .slides-wrapper .mySlides .slideText blockquote, body .page-services, body .page-services .servises-wrapper, body .page-services .servises-wrapper .services .icon-services {
   display: flex;
   justify-content: center; }
 
 body .description-product .price1 p, body .description-product .price2 p, body .description-product .price3 p, body .description-product .price4 p {
   font-family: "Lato-Heavy", sans-serif;
   font-size: 1.7rem;
-  padding: 0 14px 4px 22px;
+  padding: 0 14px 2px 22px;
   position: relative;
   font-size: 1.7rem;
   margin: 27px 0 19px; }
@@ -249,7 +249,7 @@ body {
       font-size: 1.5rem;
       letter-spacing: 0.2; }
     body .domain-information p {
-      margin: 0 0 50px 0;
+      margin: 0 0 49px 0;
       font-family: "Montserrat-ExstraLight", sans-serif;
       letter-spacing: 0.83; }
     body .domain-information .input-decoration {
@@ -309,7 +309,7 @@ body {
           color: #a2a2a2; }
     body .domain-information .table-decoration {
       border: 1px solid #a2a2a2;
-      padding: 21px 24px;
+      padding: 25px 23px;
       margin-top: 37px;
       width: 55.5%;
       display: flex;
@@ -349,7 +349,7 @@ body {
             border: none; }
   body .description-product {
     background: url(../images/img-eff.png) no-repeat;
-    margin-top: 86px;
+    margin-top: 89px;
     flex-direction: column;
     align-items: center;
     background-size: 100% auto; }
@@ -357,11 +357,11 @@ body {
       display: flex;
       justify-content: space-around;
       width: 79%;
-      margin-top: 32px; }
+      margin-top: 30px; }
       @media (max-width: 900px) {
         body .description-product .price-offers {
           flex-wrap: wrap;
-          width: 98%; } }
+          width: 100%; } }
     body .description-product .price {
       background: #ffffff;
       width: 20%;
@@ -536,54 +536,53 @@ body {
   body .slider .slides-wrapper {
     max-width: 1600px;
     position: relative;
-    margin-top: 85px;
+    margin-top: 88px;
     margin-bottom: 49px; }
-    body .slider .slides-wrapper .mySlides img {
-      width: 100%; }
-    body .slider .slides-wrapper .mySlides .slideText {
-      color: white;
-      font-size: 1.22rem;
-      position: absolute;
-      top: 5%;
-      align-items: center; }
-      @media (max-width: 1000px) {
-        body .slider .slides-wrapper .mySlides .slideText {
-          font-size: 0.5rem; } }
-      body .slider .slides-wrapper .mySlides .slideText blockquote {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-family: "Lato-Light", sans-serif;
-        color: #f5f5f5;
-        line-height: 1.5; }
-        body .slider .slides-wrapper .mySlides .slideText blockquote cite {
-          font-family: "Lato-Reglar", sans-serif;
-          font-style: normal;
-          top: 82%;
-          position: absolute;
-          left: 42%; }
-    body .slider .slides-wrapper .mySlides .slide1 {
-      right: 20%; }
-      @media (max-width: 1000px) {
-        body .slider .slides-wrapper .mySlides .slide1 {
-          right: 30%; } }
-    body .slider .slides-wrapper .mySlides .slide2 {
-      right: 30%; }
-      @media (max-width: 1000px) {
-        body .slider .slides-wrapper .mySlides .slide2 {
-          right: 30%; } }
-    body .slider .slides-wrapper .mySlides .slide3 {
-      right: 38%; }
-      @media (max-width: 1000px) {
-        body .slider .slides-wrapper .mySlides .slide3 {
-          right: 30%; } }
+    body .slider .slides-wrapper .mySlides {
+      display: flex;
+      justify-content: center; }
+      body .slider .slides-wrapper .mySlides img {
+        width: 100%; }
+      body .slider .slides-wrapper .mySlides .slideText {
+        color: white;
+        font-size: 1.22rem;
+        position: absolute;
+        top: 5%;
+        margin: 0; }
+        @media (max-width: 1000px) {
+          body .slider .slides-wrapper .mySlides .slideText {
+            font-size: 1rem; } }
+        @media (max-width: 500px) {
+          body .slider .slides-wrapper .mySlides .slideText {
+            top: 2%; } }
+        body .slider .slides-wrapper .mySlides .slideText blockquote {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          font-family: "Lato-Light", sans-serif;
+          color: #f5f5f5;
+          line-height: 1.5; }
+          body .slider .slides-wrapper .mySlides .slideText blockquote cite {
+            font-family: "Lato-Reglar", sans-serif;
+            font-style: normal;
+            bottom: 0;
+            left: 42%;
+            position: absolute; }
+          body .slider .slides-wrapper .mySlides .slideText blockquote .cite-name {
+            left: 32%; }
+            @media (max-width: 1000px) {
+              body .slider .slides-wrapper .mySlides .slideText blockquote .cite-name {
+                left: 45%; } }
     body .slider .slides-wrapper .slides-navigation {
       text-align: center;
       border-left: 1px solid white;
-      top: 65%;
+      bottom: 25%;
       position: absolute;
-      left: 51%;
+      left: 51.1%;
       padding-left: 13px; }
+      @media (max-width: 1000px) {
+        body .slider .slides-wrapper .slides-navigation {
+          bottom: 5%; } }
       body .slider .slides-wrapper .slides-navigation .dot {
         cursor: pointer;
         height: 7px;
@@ -596,10 +595,6 @@ body {
         border: 1px solid white;
         top: 59%;
         left: 54%; }
-        @media (max-width: 1000px) {
-          body .slider .slides-wrapper .slides-navigation .dot {
-            top: 74%;
-            left: 45%; } }
     body .slider .slides-wrapper .active,
     body .slider .slides-wrapper .dot:hover {
       background-color: white; }
@@ -625,9 +620,10 @@ body {
     body .page-services .servises-wrapper {
       width: 81%;
       justify-content: space-around; }
-      @media (max-width: 500px) {
+      @media (max-width: 900px) {
         body .page-services .servises-wrapper {
-          width: 100%; } }
+          width: 100%;
+          flex-wrap: wrap; } }
       body .page-services .servises-wrapper .services {
         justify-content: center;
         align-items: center;
@@ -639,8 +635,7 @@ body {
         @media (max-width: 700px) {
           body .page-services .servises-wrapper .services {
             width: 95%;
-            justify-content: center;
-            flex-wrap: wrap; } }
+            justify-content: center; } }
         body .page-services .servises-wrapper .services a {
           margin: 15px 0 5px;
           text-decoration: none;
@@ -690,7 +685,8 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        font-family: "Lato-Medium", sans-serif; }
+        font-family: "Lato-Medium", sans-serif;
+        padding-bottom: 22px; }
         @media (max-width: 1000px) {
           body .footer .footer-wrapper .footer-navigation {
             flex-direction: column;
@@ -800,7 +796,7 @@ body {
           body .footer .footer-wrapper .more-opportunities .contacts .email {
             margin-top: 5px; }
       body .footer .footer-wrapper .more-opportunities > div {
-        margin: 55px 0; }
+        margin: 36px 0; }
         @media (max-width: 750px) {
           body .footer .footer-wrapper .more-opportunities > div {
             margin: 10px 0; } }
