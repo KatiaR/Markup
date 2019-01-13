@@ -158,13 +158,14 @@ body {
                             text-decoration: none;
                             padding: 35px 0;
                         }
+                        a:hover {
+                            border-bottom: 1px solid white;
+                        }
                         @media (max-width: 700px) {
                             padding: 15px;
                         }
                     }
-                    :hover {
-                        border-bottom: 1px solid white;
-                    }
+
                     @media (max-width: 700px) {
                         display: none;
                     }
