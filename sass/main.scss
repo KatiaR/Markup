@@ -219,7 +219,8 @@ body {
             background: #21424a;
             position: relative;
             padding-left: 236px;
-			letter-spacing: 4;
+			letter-spacing: 4px;
+            font-size: 1.2rem;
 			@media (max-width: 900px) {
 				padding-left: 0;
 				font-size: 1.2rem;
@@ -246,7 +247,7 @@ body {
             background: #2fac6c;
             padding-right: 126px;
             font-size: 1.3rem;
-			letter-spacing: 1;
+			letter-spacing: 1px;
 			@media (max-width: 900px) {
 				font-size: 1.2rem;
 				padding-right: 0;
@@ -264,12 +265,12 @@ body {
             color: black;
             margin-top: 85px;
             font-size: 1.5rem;
-            letter-spacing: 0.2;
+            letter-spacing: 0.2px;
         }
         p {
             margin: 0 0 49px 0;
             font-family: "Montserrat-ExstraLight", sans-serif;
-            letter-spacing: 0.83;
+            letter-spacing: 0.83px;
 		}
 		
         .input-decoration {
@@ -291,7 +292,7 @@ body {
                 border-left: 1px solid $table-color;
                 border-right: 1px solid $table-color;
                 padding: 5px 15px;
-                letter-spacing: 0.25;
+                letter-spacing: 0.25px;
                 outline: none;
                 width: 84%;
             }
@@ -528,7 +529,7 @@ body {
     .about-wrapper {
 		margin-top: -20px;
         @extend %position-shared-content;
-        letter-spacing: 1;
+        letter-spacing: 1px;
         .about {
             width: 75%;
             @extend %position-shared-content;
@@ -551,7 +552,7 @@ body {
                     color: rgba(116, 116, 116, 255);
                     font-family: "Lato-Thin", sans-serif;
                     font-size: 1.2rem;
-                    letter-spacing: -1;
+                    letter-spacing: -1px;
                     line-height: 1.4;
                     text-align: justify;
 					padding-right: 100px;
@@ -750,7 +751,7 @@ body {
                 width: 20%;
                 font-family: "Lato-Heavy", sans-serif;
                 padding: 17px 0px;
-				letter-spacing: 0.5;
+				letter-spacing: 0.5px;
 				@media (max-width: 700px) {
                     width: 95%;
                     justify-content: center;
@@ -877,7 +878,7 @@ body {
                     & p {
                         line-height: 1.5;
                         padding-right: 39px;
-                        letter-spacing: -0.5;
+                        letter-spacing: -0.5px;
                     }
                 }
                 .site-map {
